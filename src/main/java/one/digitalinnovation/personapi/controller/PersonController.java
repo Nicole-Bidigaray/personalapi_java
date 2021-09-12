@@ -35,6 +35,9 @@ public class PersonController {
     }
 
     @GetMapping
+    public String getBook() {
+        return "API Test!";
+    }
     public List<PersonDTO> listAll() {
         return personService.listAll();
     }
